@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Specter's Website</title>
+    <title>Blog - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Blog</h1>
+        <h1>My Portfolio Blog</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <button id="toggle-dark-mode">Dark Mode</button>
         </nav>
     </header>
-    <main>
-        <section id="blog">
-            <h2>Blog Posts</h2>
-            <ul>
-                <li><a href="posts/post1.html">Post 1</a></li>
-                <li><a href="posts/post2.html">Post 2</a></li>
-            </ul>
-        </section>
-    </main>
+    <div class="container">
+        <div id="sidebar-container"></div>
+        <main class="content">
+            <h2>Welcome to My Blog</h2>
+            <p>This is the blog section of my personal portfolio.</p>
+            <!-- Blog content goes here -->
+        </main>
+    </div>
     <footer>
-        <button id="toggle-dark-mode">Dark Mode</button>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
+    <script src="loadSidebar.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

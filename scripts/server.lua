@@ -1,5 +1,6 @@
 my_blog_portfolio/
 |-- index.html
+|   |-- favicon.ico
 |-- blog.html
 |-- post.html
 |-- styles.css
