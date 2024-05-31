@@ -1,65 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
 }
 
 header {
-    background-color: #444;
-    color: white;
-    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
-main {
-    padding: 1rem;
+nav button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-section {
-    margin-bottom: 2rem;
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px); /* Adjust height based on header and footer */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#sidebar-container {
+    width: 250px;
+    background-color: #eaeaea;
+    padding: 20px;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #444;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #666;
+.dark-mode nav ul li a {
+    color: #fff;
+}
+
+.dark-mode #sidebar-container {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .sidebar ul li a {
+    color: #fff;
 }
