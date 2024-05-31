@@ -57,7 +57,7 @@ nav button {
     padding: 20px;
     overflow-y: auto;
     border-left: 1px solid #ccc;
-    height: 150px; /* Fixed height */
+    height: 350px; /* Fixed height */
 }
 
 .sidebar h2 {
