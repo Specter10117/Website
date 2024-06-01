@@ -106,8 +106,8 @@ footer {
     color: #fff;
 }
 
-img { 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-  }
+#footer-logo{ 
+    position:fixed; 
+    bottom:0; 
+    left:0; 
+} 
