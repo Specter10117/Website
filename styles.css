@@ -105,3 +105,9 @@ footer {
 .dark-mode .sidebar ul li a {
     color: #fff;
 }
+
+img { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+  }
